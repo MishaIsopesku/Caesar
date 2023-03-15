@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="345.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
+    <Button fx:id="loadButton" layoutX="171.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleLoadButtonAction" prefHeight="26" prefWidth="150" text="Завантажити .txt файл" />
+    <TextArea fx:id="inputArea" editable="false" layoutX="14.0" layoutY="81.0" prefHeight="75" prefWidth="450" />
+    <Label layoutX="13.0" layoutY="243.0" text="Виведення:" />
+    <TextArea fx:id="outputArea" editable="false" layoutX="14.0" layoutY="261.0" prefHeight="75.0" prefWidth="450" />
+    <Label layoutX="337.0" layoutY="166.0" text="Зрушення:" />
+    <TextField fx:id="shiftField" layoutX="400.0" layoutY="162.0" prefHeight="26" prefWidth="58" />
+    <Button fx:id="encryptButton" layoutX="14.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleEncryptButtonAction" prefHeight="26" prefWidth="150" text="Зашифрувати текст" />
+    <Button fx:id="decryptButton" layoutX="170.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleDecryptButtonAction" prefHeight="26" prefWidth="150" text="Розшифрувати текст" />
+
+    <Label fx:id="error" layoutX="7.0" layoutY="225.0" prefHeight="17.0" prefWidth="570.0" textFill="darkred" />
+   <Label layoutX="13.0" layoutY="59.0" prefHeight="18.0" prefWidth="62.0" text="Введення:" />
+   <Label layoutX="-1.0" prefHeight="75.0" prefWidth="463.0" text="                                                             Шифр Цезаря" />
+
+</AnchorPane>
